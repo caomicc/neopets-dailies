@@ -24,7 +24,13 @@ export default function Home() {
               columns={[3, 4, 5]}
               key={activity.title}
             >
-              {activity.items.map((item) => (<DailyItem {...item} />))}
+              {activity.items.map((item) => (
+                <DailyItem
+                  key={item.title}
+                  {...item}
+                  />
+                )
+              )}
             </SimpleGrid>
           </Stack>
         ))}
