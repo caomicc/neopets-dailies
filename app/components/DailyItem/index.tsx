@@ -25,16 +25,19 @@ export default function DailyItem(props: Activity) {
       >
         <Stack
           spacing={2}>
-          <Box px={4}
+          <Box
+           px={4}
           >
+            <Box
+              p={2}
+              transition={'all .3s ease-in-out'}
+              className={'shadow'}
+              background={'white'}
+              borderRadius={'lg'}>
             <AspectRatio
               ratio={1}
-              borderRadius={'1rem'}
               width={'100%'}
-              overflow={'hidden'}
               pos={'relative'}
-              className={'shadow'}
-              transition={'all .3s ease-in-out'}
               mx={'auto'}
               >
                 <Image
@@ -45,6 +48,7 @@ export default function DailyItem(props: Activity) {
                   priority
                 />
               </AspectRatio>
+              </Box>
             </Box>
           <Text
             fontSize={'.75rem'}
