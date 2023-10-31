@@ -12,8 +12,11 @@ export default function DailyItem(props: Activity) {
       transition={'all .2s ease-in-out'}
       _hover={
         {
-          bg: 'gray.100',
-          cursor: 'pointer'
+          // bg: 'rgba(0,0,0,0.03)',
+          cursor: 'pointer',
+          '.shadow': {
+            boxShadow: 'md'
+          }
         }
       }>
       <Link
@@ -22,13 +25,16 @@ export default function DailyItem(props: Activity) {
       >
         <Stack
           spacing={2}>
-            <Box px={4}>
+          <Box px={4}
+          >
             <AspectRatio
               ratio={1}
               borderRadius={'1rem'}
               width={'100%'}
               overflow={'hidden'}
               pos={'relative'}
+              className={'shadow'}
+              transition={'all .3s ease-in-out'}
               mx={'auto'}
               >
                 <Image

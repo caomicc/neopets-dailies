@@ -193,19 +193,19 @@ export const activities : Activities[] =
     title: 'Scratchcards',
     items: [
       {
-      title: 'Winter Scratchcard Kiosk',
+      title: 'Winter Kiosk',
       description: 'Free food for the homeless',
       src: '/vercel.svg',
       href: 'https://vercel.com',
     },
     {
-      title: 'Spooky Scratchcard Kiosk',
+      title: 'Spooky Kiosk',
       description: 'Free food for the homeless',
       src: '/vercel.svg',
       href: 'https://vercel.com',
     },
     {
-      title: 'Desert Scratchcard Kiosk',
+      title: 'Desert Kiosk',
       description: 'Free food for the homeless',
       src: '/vercel.svg',
       href: 'https://vercel.com',

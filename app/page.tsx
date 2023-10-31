@@ -1,28 +1,29 @@
 'use client'
 
-import { Text, SimpleGrid, Stack, Flex, Container} from "@chakra-ui/react";
+import { Text, SimpleGrid, Stack, Flex, Container, Heading} from "@chakra-ui/react";
 import DailyItem from "./components/DailyItem";
 import { activities } from "./components/dailies";
-
 
 export default function Home() {
   return (
     <Container
-     maxW={['md', 'lg', '3xl']}>
+     maxW={['md', 'lg', '3xl']} py={6}>
       <Flex as={'main'} flexDir={'column'}>
         {activities.map((activity) => (
-          <Stack key={activity.title} mb={4}>
+          <Stack key={activity.title} mb={8}>
             {activity.title &&
-            <Text as={'h2'} textTransform={'capitalize'}
+            <Heading
+              textTransform={'capitalize'}
               fontSize={'2rem'}
-              fontFamily={'Delicious Handrawn'}
               >
-                {activity.title}
-            </Text>}
+              {activity.title}
+            </Heading>}
             {activity.description && <Text>{activity.description}</Text>}
             <SimpleGrid
               columns={[3, 4, 5]}
               key={activity.title}
+              background={'gray.100'}
+              borderRadius={'xl'}
             >
               {activity.items.map((item) => (
                 <DailyItem
