@@ -11,7 +11,7 @@ export default function Home() {
      maxW={['md', 'lg', '3xl']}>
       <Flex as={'main'} flexDir={'column'}>
         {activities.map((activity) => (
-          <Stack mb={4}>
+          <Stack key={activity.title} mb={4}>
             {activity.title &&
             <Text as={'h2'} textTransform={'capitalize'}
               fontSize={'2rem'}
