@@ -3,8 +3,8 @@ import { extendTheme } from "@chakra-ui/react"
 
 
 export const fonts = {
-  heading: 'Burbank Small Medium',
-  body: 'Burbank Small Medium',
+  heading: `"cafeteria", sans-serif`,
+  body: `"museo-sans-rounded", sans-serif`,
 }
 
 // 2. Call `extendTheme` and pass your custom values

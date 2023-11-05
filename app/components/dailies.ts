@@ -17,7 +17,12 @@ export interface Activities extends Record<string, any> {
 export const activities: Activities[] =
   [
     {
-      title: 'freebies',
+      title: 'Freebies',
+      icon: {
+        width: 30,
+        height: 30,
+        src: 'https://images.neopets.com/premium/portal/images/nptotal-icon.png',
+      },
       items: [
         {
           title: 'Advent Calendar',
@@ -225,6 +230,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Some Luck Needed',
+      icon: {
+        width: 30,
+        height: 30,
+        src: 'https://images.neopets.com/themes/h5/basic/images/shopwizard-icon.png',
+      },
       items: [
         {
           title: 'Almost Abandoned Attic',
@@ -262,6 +272,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Plots',
+      icon: {
+        width: 30,
+        height: 30,
+        src: 'https://images.neopets.com/themes/h5/altadorcup/images/premium-icon.png',
+      },
       items: [
         {
           title: 'Altador Plot Prizes',
@@ -281,6 +296,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Wheels',
+      icon: {
+        width: 30,
+        height: 30,
+        src: 'https://images.neopets.com/quests/categories/SpinWheel.png',
+      },
       items: [
         {
           title: 'Wheel of Mediocrity',
@@ -339,6 +359,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Scratchcards',
+      icon: {
+        width: 30,
+        height: 30,
+        src: 'https://images.neopets.com/themes/h5/altadorcup/images/tradingcards-icon.png',
+      },
       items: [
         {
           title: 'Winter Kiosk',
@@ -376,6 +401,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Time Based',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/quests/images/timer.png',
+      },
       items: [
         {
           title: 'Snowager',
@@ -423,6 +453,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Essentials',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/themes/h5/altadorcup/images/bell-icon.png',
+      },
       items: [
 
         {
@@ -632,6 +667,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Games',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/quests/categories/PlayGame.png',
+      },
       items: [
         {
           title: 'Guess the Marrow',
@@ -815,6 +855,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Training',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/refer/items/dubloon1_gray.gif',
+      },
       items: [
         {
           title: 'Codestone Training',
@@ -838,6 +883,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Updates',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/themes/h5/altadorcup/images/news-icon.png',
+      },
       items: [
         {
           title: 'Neopian News',
@@ -862,6 +912,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Quests',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/quests/images/CompletedQuest.png',
+      },
       items: [
         {
           title: 'Illusen\'s Glade',
@@ -922,6 +977,11 @@ export const activities: Activities[] =
     },
     {
       title: 'Contests',
+       icon: {
+        width: 30,
+        height: 30,
+        src:  'https://images.neopets.com/themes/h5/basic/images/spotlights-icon.png',
+      },
       items: [
         {
           title: 'Lenny Conundrum',

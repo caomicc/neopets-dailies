@@ -1,29 +1,54 @@
-import { Heading, Stack, Text } from "@chakra-ui/react"
-import { Activities } from "../dailies"
-import Grid from "../Grid"
+import {
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  Text,
+} from '@chakra-ui/react';
+import { Activities } from '../dailies';
+import Grid from '../Grid';
+import Image from 'next/image';
 
 export default function Section(props: Activities) {
-  const { title, description } = props
+  const { title, description, icon } = props;
   return (
-   <Stack
-      p={{base: 1, md: 4}}
-      pt={{base: 2, md: 6}}
-      mb={8}
-      boxShadow={'sm'}
-      background={'rgba(255,255,255,.4)'}
-      border={'1px solid #f7faff'}
-      backdropFilter={'blur(20px)'}
-      borderRadius={'xl'}>
-      {title &&
-      <Heading
-        textTransform={'capitalize'}
-        px={{base: 1, md: 4}}
-        fontSize={'2rem'}
+    <>
+      <AccordionItem
+        border={0}
+        background={'rgba(255,255,255,.8)'}
+        borderRadius={'xl'}
+        mb={4}
+      >
+        <AccordionButton
+          py={3}
+          px={4}
+          _hover={{
+            background: 'transparent',
+          }}
         >
-        {title}
-      </Heading>}
-      {description && <Text>{description}</Text>}
-      <Grid {...props} />
-    </Stack>
-  )
+            <Image
+              {...icon}
+              alt={title}
+            />
+          <Box
+            as="span"
+            flex="1"
+            ml={2}
+            textAlign="left"
+            textTransform={'capitalize'}
+            fontSize={'1.25rem'}
+            fontWeight={'bold'}
+          >
+            {title}
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+        <AccordionPanel pb={4}>
+          {description && <Text>{description}</Text>}
+          <Grid {...props} />
+        </AccordionPanel>
+      </AccordionItem>
+    </>
+  );
 }
