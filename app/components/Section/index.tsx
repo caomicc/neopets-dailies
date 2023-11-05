@@ -17,18 +17,20 @@ export default function Section(props: Activities) {
       <AccordionItem
         border={0}
         background={'rgba(255,255,255,.8)'}
-        borderRadius={'xl'}
-        mb={4}
+        borderRadius={{base: 'none', md: 'xl'}}
+        mb={{base: 0, md: 4}}
       >
         <AccordionButton
-          py={3}
-          px={4}
+          py={{base: 2, md:3}}
+          px={{base: 2, md:4}}
           _hover={{
             background: 'transparent',
           }}
         >
             <Image
               {...icon}
+              width={30}
+              height={30}
               alt={title}
             />
           <Box
@@ -37,14 +39,14 @@ export default function Section(props: Activities) {
             ml={2}
             textAlign="left"
             textTransform={'capitalize'}
-            fontSize={'1.25rem'}
+            fontSize={{base: 'md', md: 'lg'}}
             fontWeight={'bold'}
           >
             {title}
           </Box>
           <AccordionIcon />
         </AccordionButton>
-        <AccordionPanel pb={4}>
+        <AccordionPanel pb={4} px={0}>
           {description && <Text>{description}</Text>}
           <Grid {...props} />
         </AccordionPanel>

@@ -21,6 +21,7 @@ export default function Header() {
       zIndex={10}
       boxShadow={'sm'}
       justifyContent={'center'}
+      minH={'61px'}
     >
       <Flex
         maxW={['md', 'lg', '4xl']}
@@ -30,18 +31,27 @@ export default function Header() {
         justifyContent={'space-between'}
         alignItems={'center'}
       >
-        <Flex
-          alignItems={'center'}
-          gap={2}
-        >
-          <Image src={'/shoy.png'} alt={'Neopets Logo'} width={45} height={45} />
+        <Flex alignItems={'center'} gap={2}>
+          <Image
+            src={'/shoy.png'}
+            alt={'Neopets Logo'}
+            width={45}
+            height={45}
+          />
           {/* <Image src={'https://images.neopets.com/t/val/events/trade_accept.gif'} width={45} height={45} /> */}
-          <Box letterSpacing={'.05rem'} fontSize={'2xl'} fontWeight={700}>
-            Neopets Dailies
+          <Box
+            letterSpacing={{ base: '.02rem', md: '.05rem' }}
+            fontSize={{ base: 'sm', md: '2xl' }}
+            fontWeight={700}
+          >
+            {"Cammy's Neopets Dailies"}
           </Box>
         </Flex>
         {isMounted && (
-          <Box>
+          <Box
+            fontSize={{ base: 'xs', md: 'lg' }}
+            display={{ base: 'none', md: 'flex' }}
+          >
             <Clock timezone={'US/Pacific'} format={'h:mm:ssa'} ticking={true} />{' '}
             NST
           </Box>

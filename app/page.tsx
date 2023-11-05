@@ -4,6 +4,7 @@ import { Box, Flex, Container, Accordion } from '@chakra-ui/react';
 import { activities } from './components/dailies';
 import Section from './components/Section';
 import Header from './components/Header';
+import Utility from './components/Utility';
 
 export default function Home() {
   const favoriteItems = activities.flatMap((activity) =>
@@ -13,23 +14,25 @@ export default function Home() {
   return (
     <Box background={'pink.100'}>
       <Header />
+      <Utility />
       <Container
         maxW={['md', 'lg', '4xl']}
-        px={{ base: 3, md: 8 }}
-        pb={6}
-        pt={24}
+        px={{ base: 0, md: 8 }}
+        pb={{base: 0, md: 14}}
+        pt={{base: 0, md: 24}}
       >
         <Flex as={'main'} flexDir={'column'}>
           <Accordion
             backdropFilter={'blur(20px)'}
             background={'rgba(255,255,255,.4)'}
             overflow={'hidden'}
-            borderRadius={'xl'}
-            border={'1px solid'}
-            borderColor={'pink.50'}
-            p={6}
+            borderRadius={{base: 'none', md: 'xl'}}
+            border={{base: 'none', md: '1px solid pink.50'}}
+            px={{base: 0, md: 6}}
+            py={{base: '61px', md: 6}}
             defaultIndex={[0]}
-            allowMultiple
+            allowToggle
+            // allowMultiple
           >
             <Section
               title={'My Favorites'}

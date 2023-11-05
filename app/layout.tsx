@@ -2,8 +2,8 @@ import { Providers } from "./providers";
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Neopets Dailies',
-  description: 'Cam\'s Neopets Dailies :)',
+  title: 'Cammy\'s Neopets Dailies',
+  description: 'A list of Neopets dailies',
 }
 
 export default function RootLayout({
