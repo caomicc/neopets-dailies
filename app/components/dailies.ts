@@ -16,6 +16,20 @@ export interface Activities extends Record<string, any> {
 
 export const activities: Activities[] =
   [
+     {
+      title: 'Guides',
+      icon: {
+        src: 'https://images.neopets.com/items/boo_xweetok_howtofly.gif',
+      },
+      items: [
+        {
+          title: 'Just Food Club Bets',
+          description: 'Just Food Club Bets Please',
+          src: 'https://images.neopets.com/items/foo_speckled_apple.gif',
+          href: 'https://justfoodclub.xyz/',
+        },
+      ],
+    },
     {
       title: 'Freebies',
       icon: {
@@ -378,21 +392,12 @@ export const activities: Activities[] =
           needsFlash: true,
           frequency: 'once every four hours'
         },
-        {
-          title: 'Premium',
-          description: 'Free food for the homeless',
-          src: 'https://images.neopets.com/premium/2023/icon-scratchcards.png',
-          href: 'http://www.neopets.com/premium/scratch.phtml',
-          needsFlash: true,
-          favorite: true,
-          frequency: 'once a week'
-        }
       ],
     },
     {
       title: 'Time Based',
-       icon: {
-        src:  'https://images.neopets.com/quests/images/timer.png',
+      icon: {
+        src: 'https://images.neopets.com/quests/images/timer.png',
       },
       items: [
         {
@@ -441,8 +446,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Essentials',
-       icon: {
-        src:  'https://images.neopets.com/themes/h5/altadorcup/images/bell-icon.png',
+      icon: {
+        src: 'https://images.neopets.com/themes/h5/altadorcup/images/bell-icon.png',
       },
       items: [
 
@@ -526,13 +531,15 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_madscientist_labray.gif',
           favorite: true,
           href: 'http://www.neopets.com/lab2.phtml',
+          frequency: 'once a day',
         },
         {
-          title: 'PetPet Laboratory Ray',
+          title: 'PetPet Lab Ray',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_labjelly.gif',
           favorite: true,
           href: 'http://www.neopets.com/petpetlab.phtml',
+          frequency: 'once a day',
         },
         {
           title: 'Shop Till',
@@ -624,6 +631,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/kadoatie_faerie.gif',
           favorite: true,
           href: 'http://www.neopets.com/games/kadoatery/index.phtml',
+          frequency: 'random',
         },
         {
           title: 'Neggery',
@@ -653,8 +661,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Games',
-       icon: {
-        src:  'https://images.neopets.com/quests/categories/PlayGame.png',
+      icon: {
+        src: 'https://images.neopets.com/quests/categories/PlayGame.png',
       },
       items: [
         {
@@ -712,6 +720,7 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_coconutshy_quiggle.gif',
           href: 'http://www.neopets.com/halloween/coconutshy.phtml',
+          needsFlash: true,
           frequency: '20 times a day',
         },
         {
@@ -839,8 +848,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Training',
-       icon: {
-        src:  'https://images.neopets.com/refer/items/dubloon1_gray.gif',
+      icon: {
+        src: 'https://images.neopets.com/refer/items/dubloon1_gray.gif',
       },
       items: [
         {
@@ -865,8 +874,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Updates',
-       icon: {
-        src:  'https://images.neopets.com/themes/h5/altadorcup/images/news-icon.png',
+      icon: {
+        src: 'https://images.neopets.com/themes/h5/altadorcup/images/news-icon.png',
       },
       items: [
         {
@@ -892,8 +901,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Quests',
-       icon: {
-        src:  'https://images.neopets.com/quests/images/CompletedQuest.png',
+      icon: {
+        src: 'https://images.neopets.com/quests/images/CompletedQuest.png',
       },
       items: [
         {
@@ -920,6 +929,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_faerie_ember.gif',
           favorite: true,
           href: 'http://www.neopets.com/quests.phtml',
+          frequency: 'random',
         },
         {
           title: 'Brain Tree Quests',
@@ -955,8 +965,8 @@ export const activities: Activities[] =
     },
     {
       title: 'Contests',
-       icon: {
-        src:  'https://images.neopets.com/themes/h5/basic/images/spotlights-icon.png',
+      icon: {
+        src: 'https://images.neopets.com/themes/h5/basic/images/spotlights-icon.png',
       },
       items: [
         {
@@ -1062,5 +1072,5 @@ export const activities: Activities[] =
           href: 'http://www.neopets.com/ul_spotlight.phtml',
         },
       ]
-    }
+    },
   ]

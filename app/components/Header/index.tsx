@@ -1,17 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
-import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
-const Clock = dynamic(() => import('react-live-clock'), { ssr: false });
-
 export default function Header() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   return (
     <Flex
       width={'100%'}
@@ -44,18 +34,9 @@ export default function Header() {
             fontSize={{ base: 'sm', md: '2xl' }}
             fontWeight={700}
           >
-            {"Cammy's Neopets Dailies"}
+            {"Cammy\'s Neopets Dailies"}
           </Box>
         </Flex>
-        {isMounted && (
-          <Box
-            fontSize={{ base: 'xs', md: 'lg' }}
-            display={{ base: 'none', md: 'flex' }}
-          >
-            <Clock timezone={'US/Pacific'} format={'h:mm:ssa'} ticking={true} />{' '}
-            NST
-          </Box>
-        )}
       </Flex>
     </Flex>
   );
