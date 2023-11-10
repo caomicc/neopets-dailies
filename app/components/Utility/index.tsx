@@ -35,8 +35,7 @@ export default function Utility() {
           justifyContent={'space-between'}
           gap={2}
         >
-          <Box flex={1}>
-            {/* <Button colorScheme={'pink'} width={'100%'} size={'sm'}>Search</Button> */}
+          <Box flex={3}>
           </Box>
           <Box flex={1}>
             <Button colorScheme={'pink'} width={'100%'} size={'sm'} onClick={scrollToTop}>

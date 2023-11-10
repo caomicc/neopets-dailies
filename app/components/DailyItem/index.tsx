@@ -24,16 +24,16 @@ export default function DailyItem(props: Activity) {
 
   if (orientation === 'list') {
     return (
-      <Box
-        background={'white'}
-        px={2}
-        py={1}
-        borderRadius={'2xl'}
-        boxShadow={
-          '0 1px 3px -1px rgba(0, 0, 0, 0.1),0 2px 2px -1px rgba(0, 0, 0, 0.06)'
-        }
-      >
-        <Link href={href} target="_blank">
+      <Link href={href} target="_blank">
+        <Box
+          background={'white'}
+          px={2}
+          py={1}
+          borderRadius={'xl'}
+          boxShadow={
+            '0 1px 3px -1px rgba(0, 0, 0, 0.1),0 2px 2px -1px rgba(0, 0, 0, 0.06)'
+          }
+        >
           <Flex alignItems={'center'}>
             <Box
               p={1}
@@ -73,7 +73,7 @@ export default function DailyItem(props: Activity) {
             <Box px={2} width={'100%'}>
               <Stack spacing={1}>
                 <Text
-                  fontSize={{ base: '.9rem' }}
+                  fontSize={{ base: '.8rem' }}
                   fontWeight={'bold'}
                   noOfLines={1}
                   color={'#273a68'}
@@ -92,12 +92,23 @@ export default function DailyItem(props: Activity) {
                     {frequency}
                   </Text>
                 )}
-                {needsFlash && <Text fontStyle={'italic'}>needs flash</Text>}
+                {needsFlash && (
+                  <Text
+                    fontSize={{ base: '.7rem' }}
+                    noOfLines={1}
+                    color={'#5f6f93'}
+                    opacity={0.8}
+                    lineHeight={'1'}
+                    fontStyle={'italic'}
+                  >
+                    needs flash
+                  </Text>
+                )}
               </Stack>
             </Box>
           </Flex>
-        </Link>
-      </Box>
+        </Box>
+      </Link>
     );
   }
 

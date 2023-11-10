@@ -9,7 +9,7 @@ export default function Section(props: Activities) {
   const { title, description } = props;
   return (
     <Box>
-      {title && <Text fontSize={'1rem'} px={2}>{title}</Text>}
+      {/* {title && <Text fontSize={'1rem'} px={2}>{title}</Text>} */}
       {description && <Text>{description}</Text>}
       <List {...props} />
     </Box>

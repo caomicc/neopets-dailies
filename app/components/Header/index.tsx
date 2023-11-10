@@ -21,21 +21,28 @@ export default function Header() {
         justifyContent={'space-between'}
         alignItems={'center'}
       >
-        <Flex alignItems={'center'} gap={2}>
+        <Flex
+        justifyContent={'space-between'}
+        alignItems={'center'} w={'100%'} gap={2}>
           <Image
             src={'/shoy.png'}
             alt={'Neopets Logo'}
             width={45}
             height={45}
           />
-          {/* <Image src={'https://images.neopets.com/t/val/events/trade_accept.gif'} width={45} height={45} /> */}
           <Box
             letterSpacing={{ base: '.02rem', md: '.05rem' }}
-            fontSize={{ base: 'sm', md: '2xl' }}
+            fontSize={{ base: 'md', md: '2xl' }}
             fontWeight={700}
           >
-            {"Cammy\'s Neopets Dailies"}
+            {"✨ Cammy\'s Neopets Dailies ✨"}
           </Box>
+          <Image
+            src={'/shoy.png'}
+            alt={'Neopets Logo'}
+            width={45}
+            height={45}
+          />
         </Flex>
       </Flex>
     </Flex>

@@ -241,7 +241,7 @@ export const activities: Activities[] =
       ]
     },
     {
-      title: 'Some Luck Needed',
+      title: 'Lucky',
       icon: {
         src: 'https://images.neopets.com/themes/h5/basic/images/shopwizard-icon.png',
       },
