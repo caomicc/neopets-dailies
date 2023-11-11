@@ -15,7 +15,6 @@ import {
 import { activities } from './components/dailies';
 import Section from './components/Section';
 import Header from './components/Header';
-import Utility from './components/Utility';
 
 export default function Home() {
   const favoriteItems = activities.flatMap((activity) =>
