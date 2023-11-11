@@ -24,10 +24,148 @@ export const activities: Activities[] =
       items: [
         {
           title: 'Just Food Club Bets',
-          description: 'Food Club bets from Reddit',
+          description: 'Food Club bets aggregated from Reddit',
           src: 'https://images.neopets.com/items/foo_speckled_apple.gif',
           href: 'https://justfoodclub.xyz/',
         },
+        {
+          title: '[Guide] Easy Trophies',
+          description: 'A guide for easier than normal trophies',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?73913-GUIDE-Easy-Trophies'
+        },
+        {
+          title: '[Guide] Annual Avatars',
+          description: 'For the full year',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?72794-GUIDE-Annual-Avatars'
+        },
+        {
+          title: '[Guide] Speed Training',
+          description: 'Optimize battledome stats',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?72815-GUIDE-Speed-Training-Your-Neopet'
+        },
+        {
+          title: '[Guide] Plushie Tycoon',
+          description: 'Monthly guide',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?72665-GUIDE-Plushie-Tycoon-Easy-Avatar-Gold-Trophy'
+        },
+        {
+          title: '[Guide] Coltzan\'s Shrine',
+          description: 'Manipulate the odds',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?85881-GUIDE-Coltzan-s-Shrine'
+        },
+        {
+          title: '[Guide] Mysterious Symol Hole',
+          description: 'Avatar guide',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?86479-GUIDE-Mysterious-Symol-Hole'
+        },
+        {
+          title: '[Guide] Jhudora\'s and Illusen\'s Quests',
+          description: 'Gold Trophy Easy!',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?69491-GUIDE-How-to-get-Jhudora-s-Illusen-s-Quest-Golden-Trophy-Easy-!'
+        },
+        {
+          title: '[Guide] Usuki Frenzy',
+          description: 'Trophy Quick Run',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?84158-Guide-Usuki-Frenzy-Trophy-Quick-Run'
+        },
+        {
+          title: 'High Score Table Quicklinks',
+          description: 'To view needed high scores to place',
+          src: 'https://images.neopets.com/items/mall_fortcookie_games.gif',
+          href: 'https://clraik.com/forum/showthread.php?75710-Gold-Trophy-Image-Guide'
+        },
+        {
+          title: '[Guide] NC Retired Rerelease Capsules',
+          description: 'Guaranteed two prizes',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?70488-Guide-to-NC-Retired-Rerelease-Capsules-Guaranteed-2-prizes'
+        },
+        {
+          title: '[Guide] Advert Attack trophy',
+          description: 'Semi legit guide for getting the trophy',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?68029-GUIDE-Advert-Attack-trophy-avatar-semi-legit-guide'
+        },
+        {
+          title: '[Guide] Kad Feeding',
+          description: 'Kad Feeding is easier than you think!',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://www.reddit.com/r/neopets/comments/5uxzk9/kad_feeding_is_easier_than_you_think_your/'
+        },
+        {
+          title: '[Guide] Kad Feeding',
+          description: 'Extremely Beginner, Extremely Abridged Kadoatie Feeding',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://www.reddit.com/r/neopets/comments/124udv0/extremely_beginner_extremely_abridged_kadoatie/'
+        },
+        {
+          title: '[Guide] The Money Tree - Generous NC Mall Shopper',
+          description: 'Bot shopper',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?67944-List-Guide-The-Money-Tree-Generous-NC-Mall-Shopper'
+        },
+        {
+          title: '[Guide] Top Gamer Avatar',
+          description: 'List of games you can use to get the avatar',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?69991-GUIDE-Top-Gamer-Avatar'
+        },
+        {
+          title: '[Guide] Imposter Apple Avatar (Apple Bobbing)',
+          description: 'Empty your inventory first!',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?73325-GUIDE-Imposter-Apple-Avatar-(Apple-Bobbing)'
+        },
+        {
+          title: '[Guide] Contest Trophies',
+          description: 'Easy contest trophies and how to place',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?75056-GUIDE-Contest-Trophies'
+        },
+        {
+          title: '[Guide] Cheeseroller Cheese Analysis',
+          description: 'Best cheese guide',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?74896-GUIDE-Cheeseroller-Cheese-Analysis'
+        },
+        {
+          title: '[Guide] Neggsweeper Trophy',
+          description: 'How to score in Neggsweeper',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?75328-Neggsweeper-Basic-Trophy-Guide'
+        },
+        {
+          title: '[Guide] ShapeShifter Avatar and Trophy',
+          description: 'Needs a computer',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?26008-Semi-Legit-Easy-ShapeShifter-Avatar-and-Trophy'
+        },
+        {
+          title: '[Guide] Uses of Intelligence and Gaining It',
+          description: 'Why to boost intelligence',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?73572-GUIDE-Uses-of-Intelligence-and-Gaining-It'
+        },
+        {
+          title: '[Guide] Coconut Shy Avatar',
+          description: 'It\'s all random and rigged',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?72694-GUIDE-Coconut-Shy-Avatar'
+        },
+        {
+          title: '[Guide] Mystery Island Kitchen Quest',
+          description: '',
+          src: 'https://images.neopets.com/items/boo_wildpetpets_guideto.gif',
+          href: 'https://clraik.com/forum/showthread.php?85386-GUIDE-Mystery-Island-Kitchen-Quest-Why-and-When-Should-I-Start'
+        }
       ],
     },
     {
@@ -194,7 +332,7 @@ export const activities: Activities[] =
           frequency: 'anytime',
         },
         {
-          title: 'Symol Hole',
+          title: 'Mysterious Symol Hole',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_symol_giant_oversized.gif',
           href: 'http://www.neopets.com/medieval/symolhole.phtml',
@@ -999,7 +1137,7 @@ export const activities: Activities[] =
       items: [
         {
           title: 'Lenny Conundrum',
-          description: 'discontinued on July 25, 2013',
+          description: 'discontinued',
           src: 'https://images.neopets.com/trophies/106_1.gif',
           href: 'http://www.neopets.com/games/conundrum.phtml',
         },
@@ -1014,6 +1152,7 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/222_1.png',
           href: 'http://www.neopets.com/gallery.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Gourmet Club',
@@ -1056,10 +1195,9 @@ export const activities: Activities[] =
         },
         {
           title: 'Better Than You',
-          description: 'discontinued on February 4, 2021',
+          description: 'discontinued',
           src: 'https://images.neopets.com/games/pages/trophies/112_1.png',
           href: 'http://www.neopets.com/games/betterthanyou.phtml',
-          needsFlash: true,
         },
         {
           title: 'Neopian Times',
