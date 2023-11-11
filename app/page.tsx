@@ -22,26 +22,30 @@ export default function Home() {
   );
 
   return (
-    <Box background={'linear-gradient(180deg, #fea8c8, #fb5d92)'} minH={'100vh'}>
+    <Box
+      background={'linear-gradient(180deg, #fea8c8, #fb5d92)'}
+      minH={'100vh'}
+    >
       <Header />
 
-        <Flex as={'main'} flexDir={'column'} gap={4}>
-          <Tabs variant={'unstyled'} colorScheme={'gray'}>
-            <Box
-              background={'#fff'}
-              top={{base: '61px'}}
-              zIndex={10}
-              pos={'fixed'}
-              overflowX={'scroll'}
-              maxW={'100vw'}
-              w={'100%'}
-              boxShadow={'xl'}
-              sx={{
-                '&::-webkit-scrollbar': {
-                  display: 'none',
-                },
-              }}
-            >
+      <Flex as={'main'} flexDir={'column'} gap={4}>
+        <Tabs variant={'unstyled'} colorScheme={'gray'}>
+          <Box
+            background={'#fff'}
+            top={{ base: '61px' }}
+            zIndex={10}
+            w={'100%'}
+            boxShadow={'xl'}
+            pos={'fixed'}
+            overflowX={'scroll'}
+            mx={'auto'}
+            sx={{
+              '&::-webkit-scrollbar': {
+                display: 'none',
+              },
+            }}
+          >
+            <Box mx={'auto'} w={'fit-content'}>
               <TabList>
                 <Tab
                   color={'#273a68'}
@@ -72,12 +76,15 @@ export default function Home() {
                 borderRadius="3px"
               />
             </Box>
-            <Container
-        maxW={['md', 'lg', '4xl']}
-        px={{ base: 0, md: 8 }}
-        pb={{ base: 14, md: 14 }}
-        pt={{ base: '3.75rem', md: 24 }}
-      >     <TabPanels mt={10}>
+          </Box>
+          <Container
+            maxW={['md', 'lg', '4xl']}
+            px={{ base: 0, md: 8 }}
+            pb={{ base: 14, md: 14 }}
+            pt={{ base: '3.75rem', md: 24 }}
+          >
+            {' '}
+            <TabPanels mt={10}>
               <TabPanel p={2}>
                 <Section
                   title={'Favorites'}
@@ -95,9 +102,9 @@ export default function Home() {
                 </TabPanel>
               ))}
             </TabPanels>
-            </Container>
-          </Tabs>
-        </Flex>
+          </Container>
+        </Tabs>
+      </Flex>
       {/* <Utility /> */}
     </Box>
   );
