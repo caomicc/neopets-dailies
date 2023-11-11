@@ -34,44 +34,46 @@ export default function DailyItem(props: Activity) {
             '0 1px 3px -1px rgba(0, 0, 0, 0.1),0 2px 2px -1px rgba(0, 0, 0, 0.06)'
           }
         >
-          <Flex alignItems={'center'}>
-            <Box
-              p={1}
-              maxW={'2.5rem'}
-              width={'100%'}
-              transition={'all .3s ease-in-out'}
-              className={'shadow'}
-              pos={'relative'}
-            >
-              <AspectRatio
-                ratio={1}
+          <Flex minH={10} alignItems={'center'}>
+            {src && (
+              <Box
+                p={1}
+                maxW={'2.5rem'}
                 width={'100%'}
+                transition={'all .3s ease-in-out'}
+                className={'shadow'}
                 pos={'relative'}
-                mx={'auto'}
               >
-                <Image
-                  src={src}
-                  alt={description}
-                  className="dark:invert"
-                  style={{
-                    mixBlendMode: 'multiply',
-                  }}
-                  fill
-                  priority
-                />
-              </AspectRatio>
-              {favorite && (
-                <Box
-                  pos={'absolute'}
-                  top={-2}
-                  left={-2}
-                  fontSize={'3xl'}
-                  lineHeight={1}
-                ></Box>
-              )}
-            </Box>
+                <AspectRatio
+                  ratio={1}
+                  width={'100%'}
+                  pos={'relative'}
+                  mx={'auto'}
+                >
+                  <Image
+                    src={src}
+                    alt={description}
+                    className="dark:invert"
+                    style={{
+                      mixBlendMode: 'multiply',
+                    }}
+                    fill
+                    priority
+                  />
+                </AspectRatio>
+                {favorite && (
+                  <Box
+                    pos={'absolute'}
+                    top={-2}
+                    left={-2}
+                    fontSize={'3xl'}
+                    lineHeight={1}
+                  ></Box>
+                )}
+              </Box>
+            )}
             <Flex px={2} width={'100%'}>
-              <Stack flex={1} spacing={0}>
+              <Stack flex={1} spacing={1}>
                 <Text
                   fontSize={{ base: '.8rem' }}
                   fontWeight={'bold'}
@@ -104,7 +106,6 @@ export default function DailyItem(props: Activity) {
                     {description}
                   </Text>
                 )}
-
               </Stack>
               {needsFlash && (
                 <Text
