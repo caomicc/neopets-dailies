@@ -16,7 +16,7 @@ export interface Activities extends Record<string, any> {
 
 export const activities: Activities[] =
   [
-     {
+    {
       title: 'Guides',
       icon: {
         src: 'https://images.neopets.com/items/boo_xweetok_howtofly.gif',
@@ -24,7 +24,7 @@ export const activities: Activities[] =
       items: [
         {
           title: 'Just Food Club Bets',
-          description: 'Just Food Club Bets Please',
+          description: 'Food Club bets from Reddit',
           src: 'https://images.neopets.com/items/foo_speckled_apple.gif',
           href: 'https://justfoodclub.xyz/',
         },
@@ -198,6 +198,7 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_symol_giant_oversized.gif',
           href: 'http://www.neopets.com/medieval/symolhole.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'TDMBGPOP',
@@ -252,7 +253,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_aisha_ghost.gif',
           href: 'http://www.neopets.com/halloween/garage.phtml',
           favorite: true,
-          frequency: 'random',
+          frequency: 'anytime'
         },
         {
           title: 'The Money Tree',
@@ -260,7 +261,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/mini_moneytree.gif',
           href: 'http://www.neopets.com/donations.phtml',
           favorite: true,
-          frequency: 'times vary',
+          frequency: 'anytime'
         },
         {
           title: 'Second Hand Shoppe',
@@ -268,7 +269,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/newbie_potatosack.gif',
           href: 'http://www.neopets.com/thriftshoppe/index.phtml',
           favorite: true,
-          frequency: 'times vary',
+          frequency: 'anytime'
         },
         {
           title: 'Rubbish Dump',
@@ -276,7 +277,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/med_booby_6.gif',
           href: 'http://www.neopets.com/medieval/rubbishdump.phtml',
           favorite: true,
-          frequency: 'times vary',
+          frequency: 'anytime'
         },
       ]
     },
@@ -406,7 +407,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/toy_snowager_plushie.gif',
           href: 'http://www.neopets.com/winter/snowager.phtml',
           favorite: true,
-          frequency: '6am, 2pm, 10pm NST'
+          frequency: 'awake at 6am, 2pm, and 10pm NST'
         },
         {
           title: 'Turmaculus',
@@ -418,7 +419,7 @@ export const activities: Activities[] =
         {
           title: 'Tarla\'s Treasures',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_tarla_squirty.gif',
           href: 'http://www.neopets.com/freebies/tarlastoolbar.phtml',
           frequency: 'random'
         },
@@ -439,8 +440,9 @@ export const activities: Activities[] =
         {
           title: 'Magma Pool',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/plu_poogle_magma.gif',
           href: 'http://www.neopets.com/magma/pool.phtml',
+          frequency: 'one minute each day'
         },
       ]
     },
@@ -555,6 +557,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_kau_mane_flowers.gif',
           favorite: true,
           href: 'http://www.neopets.com/island/tradingpost.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Auction House',
@@ -562,6 +565,7 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_wocky_auctioneer.gif',
           favorite: true,
           href: 'http://www.neopets.com/auctions.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Employment Agency',
@@ -575,55 +579,64 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_dd_sleeping_imiya.gif',
           favorite: true,
           href: 'http://www.neopets.com/neolodge.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Featured Band',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_plush_jazz1.gif',
           href: 'http://www.neopets.com/prehistoric/ticketbooth.phtml',
+          frequency: 'one band a day'
         },
         {
           title: 'Haiku',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_kougragreen.gif',
           href: 'http://www.neopets.com/island/haiku/haiku.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Island Mystic',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_plushie_mystic.gif',
           href: 'http://www.neopets.com/island/mystichut.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Golden Dubloon',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_lupe_plushblue.gif',
           href: 'http://www.neopets.com/pirates/restaurant.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Kelp Restaurant',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_kelpflake.gif',
           href: 'http://www.neopets.com/water/restaurant.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Merry Go Round',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_y17haltot_tinmrrygorndtoy.gif',
           href: 'http://www.neopets.com/worlds/roo/merrygoround.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Tiki Tours',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_tiki_tack_man.gif',
           href: 'http://www.neopets.com/island/tikitours.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Tarla\'s Shop',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/plu_tarla.gif',
           favorite: true,
           href: 'http://www.neopets.com/winter/shopofmystery.phtml',
+          frequency: 'random'
         },
         {
           title: 'Kadoatery',
@@ -636,26 +649,30 @@ export const activities: Activities[] =
         {
           title: 'Neggery',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_plushie_negg_orange.gif',
           href: 'http://www.neopets.com/winter/neggery.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Tangor\'s Workshop',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/plu_mynci_tangor.gif',
           href: 'http://www.neopets.com/magma/workshop.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'NeoCola Machine',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/plu_neocola.gif',
           href: 'http://www.neopets.com/moon/neocola.phtml',
+          frequency: 'anytime'
         },
         {
           title: 'Alien Aisha Vending Machine',
-          description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          description: 'for use with nerkmids',
+          src: 'https://images.neopets.com/items/toy_plushie_alien.gif',
           href: 'http://www.neopets.com/vending.phtml',
+          frequency: 'anytime'
         },
       ],
     },
@@ -803,31 +820,31 @@ export const activities: Activities[] =
         {
           title: 'Multiplayer Competition',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/plu_ddY21_angry_meepit.gif',
           href: 'http://www.neopets.com/games/lobby/mp_comp.phtml',
         },
         {
           title: 'Plushie Tycoon',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_greenskeith.gif',
           href: 'http://www.neopets.com/games/tycoon/index.phtml',
         },
         {
           title: 'Cliffhanger',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_greentuskaninny.gif',
           href: 'http://www.neopets.com/games/cliffhanger/cliffhanger.phtml',
         },
         {
           title: 'NeoQuest',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_neoquest_plush7.gif',
           href: 'http://www.neopets.com/games/neoquest/neoquest.phtml',
         },
         {
           title: 'NeoQuest II',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/nq2_balloon.gif',
           href: 'http://www.neopets.com/games/nq2/index.phtml',
         },
         {
@@ -853,20 +870,20 @@ export const activities: Activities[] =
       },
       items: [
         {
-          title: 'Codestone Training',
-          description: 'Free food for the homeless',
-          src: 'https://images.neopets.com/items/plu_eocodestone.gif',
-          href: 'http://www.neopets.com/island/training.phtml',
-        },
-        {
           title: 'Dubloon Training',
-          description: 'Free food for the homeless',
+          description: 'training up to level 40',
           src: 'https://images.neopets.com/items/toy_pirate_plushie4.gif',
           href: 'http://www.neopets.com/pirates/academy.phtml',
         },
         {
+          title: 'Codestone Training',
+          description: 'training up to level 250',
+          src: 'https://images.neopets.com/items/plu_eocodestone.gif',
+          href: 'http://www.neopets.com/island/training.phtml',
+        },
+        {
           title: 'Ninja Training School',
-          description: 'Free food for the homeless',
+          description: 'training above level 250',
           src: 'https://images.neopets.com/items/plu_sho_codestone.gif',
           href: 'http://www.neopets.com/island/fight_training.phtml',
         },
@@ -881,21 +898,24 @@ export const activities: Activities[] =
         {
           title: 'Neopian News',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_faerielupe.gif',
           favorite: true,
           href: 'http://www.neopets.com/nf.phtml',
+          frequency: 'some weekdays'
         },
         {
           title: 'Neopian Times',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/tom_ntissue3.gif',
           href: 'http://www.neopets.com/ntimes/',
+          frequency: 'fridays'
         },
         {
           title: 'Neomail',
           description: 'Free food for the homeless',
-          src: '/vercel.svg',
+          src: 'https://images.neopets.com/items/toy_advc2018_manillaenvelope.gif',
           href: 'http://www.neopets.com/neomessages.phtml',
+          frequency: 'anytime'
         },
       ]
     },
@@ -910,18 +930,21 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_illusen_plushie.gif',
           href: 'http://www.neopets.com/medieval/earthfaerie.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Jhudora\'s Bluff',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_jhudora_plushie.gif',
           href: 'http://www.neopets.com/faerieland/darkfaerie.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Snow Faerie Quests',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_y17haltot_snowfaerie.gif',
           href: 'http://www.neopets.com/winter/snowfaerie.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Faerie Quests',
@@ -936,30 +959,35 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_brain1.gif',
           href: 'http://www.neopets.com/halloween/braintree.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Esophagor\'s Quests',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_esophagor_plush.gif',
           href: 'http://www.neopets.com/halloween/esophagor.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Edna\'s Quests',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/toy_plushie_edna.gif',
           href: 'http://www.neopets.com/halloween/witchtower.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Kitchen Quests',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_underwater_chef.gif',
           href: 'http://www.neopets.com/island/kitchen.phtml',
+          frequency: 'once a day'
         },
         {
           title: 'Coincidence',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_adca2014_drlandbrplu.gif',
           href: 'http://www.neopets.com/magma/portal/ship.phtml',
+          frequency: 'once a day'
         },
       ],
     },
@@ -971,13 +999,13 @@ export const activities: Activities[] =
       items: [
         {
           title: 'Lenny Conundrum',
-          description: 'Free food for the homeless',
+          description: 'discontinued on July 25, 2013',
           src: 'https://images.neopets.com/trophies/106_1.gif',
           href: 'http://www.neopets.com/games/conundrum.phtml',
         },
         {
           title: 'Neohome',
-          description: 'Free food for the homeless',
+          description: 'discontinued',
           src: 'https://images.neopets.com/games/pages/trophies/348_1.png',
           href: 'http://www.neopets.com/homespotlight.phtml',
         },
@@ -992,22 +1020,23 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/trophies/trophy_gourmet_1.gif',
           href: 'http://www.neopets.com/gourmet_club.phtml',
+          frequency: 'continuous'
         },
         {
           title: 'Site Spotlight',
-          description: 'Free food for the homeless',
+          description: 'discontinued',
           src: 'https://images.neopets.com/games/pages/trophies/101_1.png',
           href: 'http://www.neopets.com/sitespotlight.phtml',
         },
         {
           title: 'PetPet Spotlight',
-          description: 'Free food for the homeless',
+          description: 'discontinued',
           src: 'https://images.neopets.com/games/pages/trophies/148_1.png',
           href: 'http://www.neopets.com/petpetspotlight.phtml',
         },
         {
           title: 'Pet Spotlight',
-          description: 'Free food for the homeless',
+          description: 'discontinued',
           src: 'https://images.neopets.com/games/trophies/trophy_petspotlight_1.gif',
           href: 'http://www.neopets.com/spotlight.phtml',
         },
@@ -1016,60 +1045,70 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/102_1.png',
           href: 'http://www.neopets.com/art/gallery.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Poetry',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/103_1.png',
           href: 'http://www.neopets.com/contributions_poems.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Better Than You',
-          description: 'Free food for the homeless',
+          description: 'discontinued on February 4, 2021',
           src: 'https://images.neopets.com/games/pages/trophies/112_1.png',
           href: 'http://www.neopets.com/games/betterthanyou.phtml',
+          needsFlash: true,
         },
         {
           title: 'Neopian Times',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/trophies/107_1.gif',
           href: 'http://www.neopets.com/ntimes/nt_submit.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Beauty Contest',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/trophies/trophy_beauty_1.gif',
           href: 'http://www.neopets.com/beauty/index.phtml',
+          frequency: 'restarts every Friday at noon'
         },
         {
           title: 'Caption Contest',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/clicktoplay/screenshot_thumbnail_100_1_v1.png',
           href: 'http://www.neopets.com/games/new_caption.phtml',
+          frequency: 'once a month'
         },
         {
           title: 'Mystery Pic',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/105_1.png',
           href: 'http://www.neopets.com/games/mysterypic.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Story Telling',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/104_1.png',
           href: 'http://www.neopets.com/art/storytell.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'Customisation',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/trophies/trophy_custompet_1.gif',
           href: 'http://www.neopets.com/spotlights/custompet/index.phtml',
+          frequency: 'once a week'
         },
         {
           title: 'User Lookups',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/games/pages/trophies/467_1.png',
           href: 'http://www.neopets.com/ul_spotlight.phtml',
+          frequency: 'once a week'
         },
       ]
     },

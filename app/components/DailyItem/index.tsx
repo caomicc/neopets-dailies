@@ -70,8 +70,8 @@ export default function DailyItem(props: Activity) {
                 ></Box>
               )}
             </Box>
-            <Box px={2} width={'100%'}>
-              <Stack spacing={1}>
+            <Flex px={2} width={'100%'}>
+              <Stack flex={1} spacing={0}>
                 <Text
                   fontSize={{ base: '.8rem' }}
                   fontWeight={'bold'}
@@ -92,20 +92,35 @@ export default function DailyItem(props: Activity) {
                     {frequency}
                   </Text>
                 )}
-                {needsFlash && (
+
+                {!frequency && description && (
                   <Text
                     fontSize={{ base: '.7rem' }}
                     noOfLines={1}
                     color={'#5f6f93'}
                     opacity={0.8}
                     lineHeight={'1'}
-                    fontStyle={'italic'}
                   >
-                    needs flash
+                    {description}
                   </Text>
                 )}
+
               </Stack>
-            </Box>
+              {needsFlash && (
+                <Text
+                  fontSize={{ base: '.7rem' }}
+                  noOfLines={1}
+                  color={'#5f6f93'}
+                  opacity={0.8}
+                  lineHeight={'1'}
+                  fontStyle={'italic'}
+                  display={'flex'}
+                  alignItems={'center'}
+                >
+                  needs flash
+                </Text>
+              )}
+            </Flex>
           </Flex>
         </Box>
       </Link>

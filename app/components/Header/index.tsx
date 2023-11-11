@@ -5,11 +5,10 @@ export default function Header() {
   return (
     <Flex
       width={'100%'}
-      background={'white'}
+      background={'#fff'}
       pos={'fixed'}
       top={0}
-      zIndex={10}
-      boxShadow={'sm'}
+      zIndex={15}
       justifyContent={'center'}
       minH={'61px'}
     >
