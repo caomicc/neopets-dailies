@@ -75,11 +75,11 @@ export default function DailyItem(props: Activity) {
             <Flex px={2} width={'100%'}>
               <Stack flex={1} spacing={1}>
                 <Text
-                  fontSize={{ base: '.8rem' }}
+                  fontSize={{ base: '.9rem' }}
                   fontWeight={'bold'}
                   noOfLines={1}
                   color={'#273a68'}
-                  lineHeight={'1'}
+                  lineHeight={'.8rem'}
                 >
                   {title}
                 </Text>

@@ -1,5 +1,6 @@
 import { Providers } from "./providers";
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Cammy\'s Neopets Dailies',

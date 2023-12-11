@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <Box
-      background={'linear-gradient(180deg, #fea8c8, #fb5d92)'}
+      background={'linear-gradient(180deg, #85bbe6, #4d71b9)'}
       minH={'100vh'}
     >
       <Header />
@@ -48,22 +48,22 @@ export default function Home() {
             <Box mx={'auto'} w={'fit-content'}>
               <TabList>
                 <Tab
-                  color={'#273a68'}
+                  color={'#222345'}
                   fontWeight={600}
                   fontSize={{ base: 'sm', md: 'md' }}
                   whiteSpace={'nowrap'}
-                  _selected={{ color: 'pink.500' }}
+                  // _selected={{ color: '#4d71b9' }}
                 >
                   Favorites
                 </Tab>
                 {activities.map((activity) => (
                   <Tab
-                    color={'#273a68'}
+                    color={'#222345'}
                     fontWeight={600}
                     fontSize={{ base: 'sm', md: 'md' }}
                     whiteSpace={'nowrap'}
                     key={activity.title}
-                    _selected={{ color: 'pink.500' }}
+                    // _selected={{ color: '#4d71b9' }}
                   >
                     {activity.title}
                   </Tab>
@@ -71,9 +71,9 @@ export default function Home() {
               </TabList>
               <TabIndicator
                 mt="-3px"
-                height="3px"
-                bg="pink.500"
-                borderRadius="3px"
+                height="4px"
+                bg="#85bbe6"
+                // borderRadius="3px"
               />
             </Box>
           </Box>

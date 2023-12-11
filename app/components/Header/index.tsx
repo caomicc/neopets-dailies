@@ -16,32 +16,24 @@ export default function Header() {
         maxW={['md', 'lg', '4xl']}
         width={'100%'}
         px={{ base: 3, md: 8 }}
-        py={2}
+        py={1}
         justifyContent={'space-between'}
         alignItems={'center'}
       >
-        <Flex
-        justifyContent={'space-between'}
-        alignItems={'center'} w={'100%'} gap={2}>
+        <Flex alignItems={'center'} w={'100%'} gap={2}>
           <Image
-            src={'/shoy.png'}
+            src={'https://images.neopets.com/dungdash/images/dungdash_mascotbg.png'}
             alt={'Neopets Logo'}
-            width={45}
-            height={45}
+            width={55}
+            height={55}
           />
           <Box
-            letterSpacing={{ base: '.02rem', md: '.05rem' }}
-            fontSize={{ base: 'md', md: '2xl' }}
-            fontWeight={700}
+            fontSize={{ base: 'xl', md: '2xl' }}
+            color={'#222345'}
+            fontFamily={'heading'}
           >
-            {"✨ Cammy\'s Neopets Dailies ✨"}
+            {"Cammy\'s Neopets Dailies"}
           </Box>
-          <Image
-            src={'/shoy.png'}
-            alt={'Neopets Logo'}
-            width={45}
-            height={45}
-          />
         </Flex>
       </Flex>
     </Flex>

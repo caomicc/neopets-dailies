@@ -218,7 +218,6 @@ export const activities: Activities[] =
           src: 'https://images.neopets.com/items/plu_halloween_lizark.gif',
           href: 'http://www.neopets.com/worlds/geraptiku/tomb.phtml',
           frequency: 'once a day',
-          favorite: true,
         },
         {
           title: 'Forgotten Shore',
@@ -390,7 +389,6 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_aisha_ghost.gif',
           href: 'http://www.neopets.com/halloween/garage.phtml',
-          favorite: true,
           frequency: 'anytime'
         },
         {
@@ -590,7 +588,14 @@ export const activities: Activities[] =
         src: 'https://images.neopets.com/themes/h5/altadorcup/images/bell-icon.png',
       },
       items: [
-
+        {
+          title: "Quest Log",
+          href: "https://www.neopets.com/questlog/",
+          description: "Quest Log",
+          src: "https://images.neopets.com/themes/h5/hauntedwoods/images/quests-icon.svg",
+          favorite: true,
+          frequency: 'every day',
+        },
         {
           title: 'Smuggler\s Cove',
           description: 'Free food for the homeless',
@@ -604,7 +609,6 @@ export const activities: Activities[] =
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/blueigloo_chia_doll.gif',
           href: 'http://www.neopets.com/winter/igloo.phtml',
-          favorite: true,
           frequency: 'random',
         },
         {
@@ -715,7 +719,6 @@ export const activities: Activities[] =
           title: 'Neolodge',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_dd_sleeping_imiya.gif',
-          favorite: true,
           href: 'http://www.neopets.com/neolodge.phtml',
           frequency: 'anytime'
         },
@@ -820,6 +823,13 @@ export const activities: Activities[] =
         src: 'https://images.neopets.com/quests/categories/PlayGame.png',
       },
       items: [
+        {
+          title: "Fashion Fever",
+          href: "https://www.neopets.com/games/h5game.phtml?game_id=1391",
+          description: "Easy game for quest log dailies",
+          src: "https://images.neopets.com/themes/h5/winterholiday/images/customise-icon.png",
+          favorite: true,
+        },
         {
           title: 'Guess the Marrow',
           description: 'Free food for the homeless',
@@ -1088,7 +1098,6 @@ export const activities: Activities[] =
           title: 'Faerie Quests',
           description: 'Free food for the homeless',
           src: 'https://images.neopets.com/items/plu_faerie_ember.gif',
-          favorite: true,
           href: 'http://www.neopets.com/quests.phtml',
           frequency: 'random',
         },

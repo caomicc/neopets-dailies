@@ -3,7 +3,7 @@ import { extendTheme } from "@chakra-ui/react"
 
 
 export const fonts = {
-  heading: `"cafeteria", sans-serif`,
+  heading: `HelloHeadline, sans-serif`,
   body: `"museo-sans-rounded", sans-serif`,
 }
 
